@@ -1,4 +1,4 @@
-from sklearn import cross_validation, svm, metrics
+from sklearn import  model_selection, svm, metrics
 
 def load_csv(fname):
     labels = []
