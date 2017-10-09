@@ -6,4 +6,7 @@ RUN pip install -U \
     numpy \
     scikit-learn \
     scikit-image \
-    scipy
+    scipy \ 
+    jupyter \
+    tensorflow \
+    keras
