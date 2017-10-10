@@ -1,4 +1,4 @@
-from sklearn import model_selection, metrics, ensemble
+from sklearn import model_selection, metrics, ensemble,svm
 import pandas as pd
 
 mr = pd.read_csv("mushroom.csv", header=None)
@@ -17,7 +17,8 @@ for row_index, row in mr.iterrows():
 data_train, data_test, label_train, label_test = model_selection.train_test_split(data, label)
 
 # データの学習
-clf = ensemble.RandomForestClassifier()
+#clf = ensemble.RandomForestClassifier()
+clf svm.SVM()
 clf.fit(data_train, label_train)
 
 # 予測
