@@ -1,5 +1,4 @@
-from sklearn import model_selection, svm, metrics
-import matplotlib.pyplot as plt
+from sklearn import model_selection, metrics, svm
 import pandas as pd
 
 tbl = pd.read_csv("bmi.csv")
