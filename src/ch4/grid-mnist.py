@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn import svm, metrics
-from sklearn.grid_search import GridSearchCV
+from sklearn.model_selection import GridSearchCV
 
 def load_csv(fname):
     labels = []
@@ -31,7 +31,7 @@ params = [
 ]
 
 # 学習
-clf = GridSearchCV(svm.SVC(), params, n_jobs=1)
+clf = GridSearchCV(svm.SVC(), params, n_jobs=-1, verbose=2)
 clf.fit(train_data, train_label)
 
 # 予測
